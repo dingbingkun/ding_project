@@ -1,0 +1,25 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ding?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    database: MYSQL
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+base:
+  #是否启用验证码
+  enableCaptcha: false
+  #人脸特征图片上传地址
+  faceUploadPath: E:/ding/faceFeature/
