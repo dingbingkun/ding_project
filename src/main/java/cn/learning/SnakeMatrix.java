@@ -10,7 +10,7 @@ public class SnakeMatrix {
         System.out.print("请输入一个正整数：");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[][] a = snakMatrix(n);
+        int[][] a = snakeMatrix(n);
         for(int i = 0 ; i<n ; i++){
             for(int j = 0 ; j<n ; j++){
                 System.out.print(a[j][i]+"\t");
@@ -19,7 +19,7 @@ public class SnakeMatrix {
         }
     }
 
-    private static int[][] snakMatrix(int n){
+    private static int[][] snakeMatrix(int n){
         int[][] result = new int[n][n];
         int number = 1;//起始数
         int axisX = -1;//X轴
