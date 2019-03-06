@@ -16,13 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
 
 @RestController
 public class SysLoginController {
-    @Value("${base.enableCaptcha}")
+    @Value("${base.enable-captcha}")
     private boolean enableCaptcha;
 
     @Resource

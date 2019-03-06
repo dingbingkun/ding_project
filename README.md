@@ -1,4 +1,4 @@
-# ding_project
+## ding_project
 
 #### 项目介绍
 个人纯后端项目，用于新技术应用前的一些小试验  
@@ -8,3 +8,5 @@
 
 #### 软件架构
 SpringBoot+Redis+Hibernate+MySql
+
+#### [个人简历](https://github.com/dingbingkun/ding_project/blob/master/%E7%AE%80%E5%8E%86.md)

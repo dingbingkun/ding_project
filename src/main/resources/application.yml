@@ -20,6 +20,16 @@ spring:
     password: 123456
 base:
   #是否启用验证码
-  enableCaptcha: false
+  enable-captcha: false
   #人脸特征图片上传地址
-  faceUploadPath: E:/ding/faceFeature/
+  face-upload-path: E:/ding/faceFeature/
+
+arcsoft:
+  windows:
+    app-id: BzrS7A4zYqjuan7h6SeVFveWCN8PCHZztg9MJJKn4ftE
+    fd-sdk-key: BiYqcrmxFeSgp7FsTrJBC19MdPeCqWwywaoW1rZB2TM7
+    fr-sdk-key: BiYqcrmxFeSgp7FsTrJBC19j7bRfyKCKuVhHEgFMiZ6F
+  linux:
+    app-id: BzrS7A4zYqjuan7h6SeVFvedMmPaTge3Ho9J4JWXZL8b
+    fd-sdk-key: B4oaFS4RzuTGDVxAammk3VBbemh8GqsmQ9BZCxfAES5x
+    fr-sdk-key: B4oaFS4RzuTGDVxAammk3VBipAxKfL6qBhAHffCAq9Mr

@@ -1,8 +1,6 @@
 package cn.ding.face.controller;
 
 import cn.ding.arcsoft.library.AFR_FSDK_FACEMODEL;
-import cn.ding.arcsoft.library.ASVLOFFSCREEN;
-import cn.ding.arcsoft.library.FaceInfo;
 import cn.ding.arcsoft.service.ArcSoftService;
 import cn.ding.common.utils.R;
 import cn.ding.face.entity.FaceEntity;
@@ -17,14 +15,13 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import java.io.File;
-import java.io.IOException;
 import java.util.List;
 
 @RestController
 @RequestMapping("/user/face")
 public class FaceController {
 
-    @Value("${base.faceUploadPath}")
+    @Value("${base.face-upload-path}")
     private String faceUploadPath;
 
     @Resource
