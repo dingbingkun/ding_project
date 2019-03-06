@@ -9,30 +9,47 @@
     8. Servlet容器把HttpServlet的响应结果传给Web客户。
 
 #### 懒汉式单例类.在第一次调用的时候实例化自己 
-     public class Singleton {
+     
+    public class Singleton {
         private Singleton() {}
         private static Singleton single=null;
-        //静态工厂方法 
         public static Singleton getInstance() {
-             if (single == null) {  
-                 single = new Singleton();
-             }  
+            return new Singleton();
+        }
+    }
+    
+    //双重校验锁
+    public class Singletton{
+        private Singleton(){}
+        private volatile static Singleton single = null;
+        public static Singleton getInstance(){
+            if(single==null){
+                synchronied(this){
+                    if(single==null){
+                        single = new Singleton();
+                    }
+                }
+            }
             return single;
         }
     }
 #### 饿汉式单例类.在类初始化时，已经自行实例化
-    public class Singleton1 {
-        private Singleton1() {}
-        private static Singleton1 single = new Singleton1();
-        //静态工厂方法 
-        public static Singleton1 getInstance() {
+    public class Singleton {
+        private Singleton() {}
+        private static Singleton single = new Singleton1();
+        public static Singleton getInstance() {
             return single;
         }
     }
 
-#### 事务：原子性Atomicity、一致性Consistency、隔离性Isolation、持久性Durability
+#### 事务
+    原子性Atomicity
+    一致性Consistency
+    隔离性Isolation
+    持久性Durability
 
-#### volatile保证了可见性和有序性，但不能保证原子性。
+#### volatile关键字
+    volatile能保证可见性和有序性，但不能保证原子性
 
 #### 类加载器
     步骤：加载、验证、准备、解析、初始化  
