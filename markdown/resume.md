@@ -6,7 +6,7 @@
 # 个人信息
 
  - 丁炳坤/男/1992.11 
- - 本科/广东技术师范大学计算机科学与技术专业/英语四级
+ - 本科/广东技术师范大学/计算机科学与技术专业/英语四级
  - Github：[https://github.com/dingbingkun](https://github.com/dingbingkun)
  
 
@@ -66,7 +66,7 @@
 # 技能清单
 以下均为我熟练使用的技能
 
-- 前端框架：Bootstrap/JavaScript/Vue
+- 前端：JavaScript/jQuery/Vue
 - 数据库相关：MySQL/Oracle
 - 后端框架：SpringMVC、SpringBoot/MyBatis、Hibernate
 - 缓存：Redis/Ehcache

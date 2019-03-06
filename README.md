@@ -9,4 +9,4 @@
 #### 软件架构
 SpringBoot+Redis+Hibernate+MySql
 
-#### [个人简历](https://github.com/dingbingkun/ding_project/blob/master/%E7%AE%80%E5%8E%86.md)
+#### [个人简历](https://github.com/dingbingkun/ding_project/blob/master/markdown/resume.md)
